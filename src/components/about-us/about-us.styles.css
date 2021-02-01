@@ -6,8 +6,7 @@
 .about-us_container{
     width: 1000px;
     margin: auto;
-    display: flex;
-    justify-content: space-between;
+
 }
 
 .about-us_container .img_container img{
@@ -24,14 +23,44 @@
     right: 200px;
     bottom: -100px;
     padding: 60px;
+    width: 550px
 }
 
 .about-us_container .text_container h1{
     text-transform: uppercase;
     font-size: 42px;
     font-weight: lighter;
+    margin-bottom: 20px;
 }
 
 .about-us_container .text_container p{
-    line-height: 1.5;
+    line-height: 1.6
+}
+
+@media all and (max-width: 480px){
+    .about-us_container{
+        width: 90%;
+    }
+    .about-us_container .text_container{
+        position: static;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .about-us_container .text_container h1{
+        font-size: 36px;
+        margin-top: 25px;
+    }
+
+    .about-us_container .text_container p{
+        font-size: 21px;
+    }
+
+    .about-us_container .img_container{
+        width: 100%;
+    }
 }

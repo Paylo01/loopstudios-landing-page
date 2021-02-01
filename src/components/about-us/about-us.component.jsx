@@ -11,8 +11,8 @@ const AboutUs = () => {
                 </div>
                 <div className="text_container">
                     <h1>The leader in<br /> interactive VR</h1>
-                    <p>Founded in 2011, Loopstudios has been producing world-class<br /> virtual reality projects for some of the bset companies around the<br />
-globe. Our award-winning creations have transformed<br /> businesses through digital experiences that bind to their brand.</p>
+                    <p>Founded in 2011, Loopstudios has been producing world-class virtual reality projects for some of the bset companies around the
+globe. Our award-winning creations have transformed businesses through digital experiences that bind to their brand.</p>
                 </div>
             </div>
         </div>
