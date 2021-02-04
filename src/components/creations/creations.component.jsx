@@ -1,13 +1,5 @@
 import './creations.styles.css';
 import React from 'react';
-import DeepEarth from '../../images/desktop/image-deep-earth.jpg';
-import NightArcade from '../../images/desktop/image-night-arcade.jpg';
-import SoccerTeam from '../../images/desktop/image-soccer-team.jpg';
-import TheGrid from '../../images/desktop/image-grid.jpg';
-import FromUpAbove from '../../images/desktop/image-from-above.jpg';
-import PocketBorealis from '../../images/desktop/image-pocket-borealis.jpg';
-import Curiosity from '../../images/desktop/image-curiosity.jpg';
-import Fisheye from '../../images/desktop/image-fisheye.jpg';
 
 const Creations = () => {
     return (
@@ -19,39 +11,31 @@ const Creations = () => {
                 </div>
                 <div className="cards">
                     <div className="card_row">
-                        <div className="card">
-                            <img src={DeepEarth} />
+                        <div className="card card_1">
                             <p>Deep<br /> Earth</p>
                         </div>
-                        <div className="card">
-                            <img src={NightArcade} />
+                        <div className="card card_2">
                             <p>Night<br /> Arcade</p>
                         </div>
-                        <div className="card">
-                            <img src={SoccerTeam} />
+                        <div className="card card_3">
                             <p>Soccer<br /> Team VR</p>
                         </div>
-                        <div className="card">
-                            <img src={TheGrid} />
+                        <div className="card card_4">
                             <p>The<br /> Grid</p>
                         </div>
                     </div>
 
                     <div className="card_row">
-                    <div className="card">
-                            <img src={FromUpAbove} />
+                    <div className="card card_5">
                             <p>From Up<br /> Above VR</p>
                         </div>
-                        <div className="card">
-                            <img src={PocketBorealis} />
+                        <div className="card card_6">
                             <p>Pocket<br /> Borealis</p>
                         </div>
-                        <div className="card">
-                            <img src={Curiosity} />
+                        <div className="card card_7">
                             <p>The<br /> Curiosity</p>
                         </div>
-                        <div className="card">
-                            <img src={Fisheye} />
+                        <div className="card card_8">
                             <p>Make It<br /> Fisheye</p>
                         </div>
                     </div>

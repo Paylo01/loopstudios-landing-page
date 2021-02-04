@@ -50,8 +50,10 @@
     flex: 1;
     margin: 15px;
     height: 400px;
-    background-color: brown;
-    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
 }
 
 .creations_container .card_row .card:last-child{
@@ -67,15 +69,107 @@
     cursor: pointer;
 }
 
-.creations_container .card_row .card img{
-    width: 100%;
+.creations_container .card_row .card_1{
+    background-image: url(../../images/desktop/image-deep-earth.jpg);
+}
+.creations_container .card_row .card_2{
+    background-image: url(../../images/desktop/image-night-arcade.jpg);
+}
+.creations_container .card_row .card_3{
+    background-image: url(../../images/desktop/image-soccer-team.jpg);
+}
+.creations_container .card_row .card_4{
+    background-image: url(../../images/desktop/image-grid.jpg);
+}
+.creations_container .card_row .card_5{
+    background-image: url(../../images/desktop/image-from-above.jpg);
+}
+.creations_container .card_row .card_6{
+    background-image: url(../../images/desktop/image-pocket-borealis.jpg);
+}
+.creations_container .card_row .card_7{
+    background-image: url(../../images/desktop/image-curiosity.jpg);
+}
+.creations_container .card_row .card_8{
+    background-image: url(../../images/desktop/image-fisheye.jpg);
 }
 
 .creations_container .card_row .card p{
-    position: absolute;
-    bottom: 5px;
-    left: 35px;
     font-size: 28px;
     text-transform:uppercase;
     color: white;
+    align-self:flex-end;
+    margin: 0 0 30px 30px;
+}
+
+@media (max-width: 480px){
+    .creations{
+        margin-top: 70px;
+    }
+
+    .creations_container{   
+        width: 100%;
+        position: relative;
+    }
+    .title_container h1{ 
+        position: absolute;      
+        top: 0;
+        left: 15%
+    }
+    .title_container .cta{  
+        position: absolute;    
+        bottom: 0;
+        left: 35%;
+        width: 160px;
+        height: 40px;
+    }
+
+    .creations_container .cards{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 70px 0;
+    }
+    
+    .creations_container .card_row{
+        flex-direction: column;
+    }
+    
+    .creations_container .card_row .card{
+        flex:initial;
+        height: 170px;
+        width: 100%;
+        margin: 15px 0 15px 0;
+    }
+
+    .creations_container .card_row .card p{
+        margin: 0 0 20px 20px;
+    }
+
+    .creations_container .card_row .card_1{
+        background-image: url(../../images/mobile/image-deep-earth.jpg);
+    }
+    .creations_container .card_row .card_2{
+        background-image: url(../../images/mobile/image-night-arcade.jpg);
+    }
+    .creations_container .card_row .card_3{
+        background-image: url(../../images/mobile/image-soccer-team.jpg);
+    }
+    .creations_container .card_row .card_4{
+        background-image: url(../../images/mobile/image-grid.jpg);
+    }
+    .creations_container .card_row .card_5{
+        background-image: url(../../images/mobile/image-from-above.jpg);
+    }
+    .creations_container .card_row .card_6{
+        background-image: url(../../images/mobile/image-pocket-borealis.jpg);
+    }
+    .creations_container .card_row .card_7{
+        background-image: url(../../images/mobile/image-curiosity.jpg);
+    }
+    .creations_container .card_row .card_8{
+        background-image: url(../../images/mobile/image-fisheye.jpg);
+    }
+
 }
