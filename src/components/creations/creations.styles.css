@@ -53,7 +53,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
+    position: relative;
 }
 
 .creations_container .card_row .card:last-child{
@@ -63,10 +63,46 @@
     margin-left: 0;
 }
 
-.creations_container .card_row .card:hover{
-    background-color: white;
-    opacity: 50%;
+.creations_container .card_row .card .transparent{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
     cursor: pointer;
+    transition: 0.8s;
+}
+
+.creations_container .card_row .card .transparent::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0%;
+    border-radius: 0 50% 50% 0 ;
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+.creations_container .card_row .card .transparent:hover::before{
+    width: 200%;
+    background-color: rgba(255,255,255,0.8);
+}
+
+
+.creations_container .card_row .card p{
+    font-size: 28px;
+    text-transform:uppercase;
+    color: white;
+    position: absolute;
+    z-index: 1;
+    bottom: 35px;
+    left: 35px;
+}
+
+.creations_container .card_row .card:hover p{
+    color: black;
 }
 
 .creations_container .card_row .card_1{
@@ -92,14 +128,6 @@
 }
 .creations_container .card_row .card_8{
     background-image: url(../../images/desktop/image-fisheye.jpg);
-}
-
-.creations_container .card_row .card p{
-    font-size: 28px;
-    text-transform:uppercase;
-    color: white;
-    align-self:flex-end;
-    margin: 0 0 30px 30px;
 }
 
 @media (max-width: 480px){
@@ -146,7 +174,8 @@
     }
 
     .creations_container .card_row .card p{
-        margin: 0 0 20px 20px;
+        bottom: 30px;
+        left: 25px;
     }
 
     .creations_container .card_row .card_1{
