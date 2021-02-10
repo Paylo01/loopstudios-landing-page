@@ -1,24 +1,29 @@
 import './hero.styles.css';
-import React from 'react';
+import React, {useState} from 'react';
 import logo from '../../images/logo.svg';
 
 const Hero = () => {
+    const [close, setClose] = useState(false);
+
     return (
         <div className="hero">  
             <div className="hero_img"></div>
             <div className="header_container">
                 <img className="logo" src={logo}/>
-                <ul className="nav_menu toggle"> 
+                <ul className="nav_menu desktop"> 
                     <li><a href="#">About</a></li>
                     <li><a href="#">Careers</a></li>
                     <li><a href="#">Events</a></li>
                     <li><a href="#">Products</a></li>
                     <li><a href="#">Support</a></li>
                 </ul>
-                <ul className="hamburger_menu">
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                <div className={close ? "hamburger_menu close" : "hamburger_menu" } onClick={() => setClose(!close)}></div>
+                <ul className={close ? "nav_menu mobile" : "hidden" } onClick={() => setClose(!close)}> 
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Support</a></li>
                 </ul>
             </div>
             <div className="hero_container">
