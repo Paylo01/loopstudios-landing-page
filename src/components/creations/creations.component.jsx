@@ -7,7 +7,7 @@ const Creations = () => {
             <div className="creations_container">
                 <div className="title_container">
                     <h1>Our Creations</h1>
-                    <a className="cta" href="#">See All</a>
+                    <a className="cta" href="/products">See All</a>
                 </div>
                 <div className="cards">
                     <div className="card_row">

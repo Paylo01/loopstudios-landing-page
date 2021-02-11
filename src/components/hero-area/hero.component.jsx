@@ -9,21 +9,21 @@ const Hero = () => {
         <div className="hero">  
             <div className="hero_img"></div>
             <div className="header_container">
-                <img className="logo" src={logo}/>
+                <img className="logo" src={logo} alt="logo" />
                 <ul className="nav_menu desktop"> 
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Careers</a></li>
-                    <li><a href="#">Events</a></li>
-                    <li><a href="#">Products</a></li>
-                    <li><a href="#">Support</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/careers">Careers</a></li>
+                    <li><a href="/events">Events</a></li>
+                    <li><a href="/products">Products</a></li>
+                    <li><a href="/support">Support</a></li>
                 </ul>
                 <div className={close ? "hamburger_menu close" : "hamburger_menu" } onClick={() => setClose(!close)}></div>
                 <ul className={close ? "nav_menu mobile" : "hidden" } onClick={() => setClose(!close)}> 
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Careers</a></li>
-                    <li><a href="#">Events</a></li>
-                    <li><a href="#">Products</a></li>
-                    <li><a href="#">Support</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/careers">Careers</a></li>
+                    <li><a href="/events">Events</a></li>
+                    <li><a href="/products">Products</a></li>
+                    <li><a href="/support">Support</a></li>
                 </ul>
             </div>
             <div className="hero_container">

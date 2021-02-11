@@ -7,7 +7,7 @@ const AboutUs = () => {
         <div className="about-us">
             <div className="about-us_container">
                 <div className="img_container">
-                    <img src={InteractiveImage} />
+                    <img src={InteractiveImage} alt="interactive" />
                 </div>
                 <div className="text_container">
                     <h1>The leader in<br /> interactive VR</h1>
