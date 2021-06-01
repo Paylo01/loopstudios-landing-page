@@ -165,6 +165,10 @@
             text-transform: uppercase;
         }
 
+        .nav_menu li::after {
+            left: 0;
+          }
+
         .hero_container{
             width: 90%;
             display: flex;
